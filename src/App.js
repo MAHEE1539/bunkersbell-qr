@@ -6,8 +6,18 @@ import CashierPage from "./pages/CashierPage";
 import MenuManagementPage from "./pages/MenuManagementPage";
 import MenuPage from "./pages/MenuPage";
 import QrPage from "./pages/QrPages";
+import { Analytics } from "@vercel/analytics/react";
+
+
 function App(){
   return (
+    <>
+      {/* Your app content */}
+      <h1>Hello World</h1>
+
+      {/* Vercel Analytics */}
+      <Analytics />
+
     <Router>
       <header className="header">
         <img src={logo} alt="Bunkers Bell Logo" className="logo" />
@@ -29,6 +39,7 @@ function App(){
         </Routes>
       </div>
     </Router>
+    </>      
   );
 }
 
