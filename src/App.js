@@ -6,10 +6,16 @@ import CashierPage from "./pages/CashierPage";
 import MenuManagementPage from "./pages/MenuManagementPage";
 import MenuPage from "./pages/MenuPage";
 import QrPage from "./pages/QrPages";
+import { Analytics } from "@vercel/analytics/react";
 
 
 function App(){
   return (
+    <>
+      {/* Your app content */}
+
+      {/* Vercel Analytics */}
+      <Analytics />
 
     <Router>
       <header className="header">
@@ -32,7 +38,7 @@ function App(){
         </Routes>
       </div>
     </Router>
-    
+    </>      
   );
 }
 
